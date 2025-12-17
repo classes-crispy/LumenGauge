@@ -1,0 +1,47 @@
+{
+  "name": "lumen-gauge",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "LumenGauge – lightweight monitoring UI (Vite + React + TypeScript) with Coinbase ecosystem integrations.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@coinbase/cdp-sdk": "^1.1.1",
+    "@coinbase/onchainkit": "^1.1.0",
+    "@coinbase/wallet-sdk": "^4.3.7",
+    "@coinbase/x402": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.40",
+    "@types/react-dom": "^18.2.15",
+    "@vitejs/plugin-react": "^4.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "dependencyDescriptions": {
+    "@coinbase/onchainkit": {
+      "repo": "coinbase/onchainkit",
+      "why": "Готовые React-компоненты/утилиты для ончейн UX (кошелёк, транзакции и т.п.)."
+    },
+    "@coinbase/wallet-sdk": {
+      "repo": "coinbase/wallet-sdk",
+      "why": "Подключение Coinbase Wallet в веб-приложении."
+    },
+    "@coinbase/x402": {
+      "repo": "coinbase/x402",
+      "why": "x402 payments: HTTP-native платёжные челленджи/верификация и paywalled эндпоинты."
+    },
+    "@coinbase/cdp-sdk": {
+      "repo": "coinbase/cdp-sdk",
+      "why": "Клиент для Coinbase Developer Platform (CDP) API/сервисов."
+    }
+  }
+}
